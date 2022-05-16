@@ -1,0 +1,534 @@
+@charset "UTF-8";
+/* Scss Document */
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+body {
+  /*font-family: 'Indie Flower', cursive;
+  font-family: 'Qwigley', cursive;
+  font-family: 'Allura', cursive;*/
+  font-family: 'Jura', sans-serif;
+  font-weight: 400;
+  background-image: url("../img/holz_2_cop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 16px;
+  line-height: 24px; }
+
+#modal {
+  display: none; }
+
+#modal {
+  width: 300px; }
+
+#modal input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #e6e6e6;
+  padding: 0px 10px;
+  font-weight: 400; }
+
+#modal input[type="submit"] {
+  background-color: #FF9800;
+  border: none; }
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto; }
+
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  height: 105px;
+  align-items: center; }
+
+.header__text {
+  margin-right: auto;
+  margin-left: 30px;
+  color: rgb(19, 18, 18);
+  font-size: 40px;
+  font-family: "Jura", sans-serif; }
+
+.header__phone {
+  font-weight: 500;
+  font-size: 16px;
+  position: relative; }
+
+.header__phone a {
+  color: #fff;
+  text-decoration: none; }
+
+.header__phone a:before {
+  font-family: 'icomoon';
+  content: "\f095";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -27px;
+  top: 5px;
+  color: #FF9800;
+  font-size: 20px; }
+
+.header__phone-text {
+  font-weight: 400;
+  color: #fff;
+  text-align: right;
+  padding-top: 3px;
+  font-family: "Jura", sans-serif; }
+
+.top {
+  margin-bottom: 75px; }
+
+.top__images {
+  background: radial-gradient(black, transparent);
+  min-height: 545px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-width: 1720px;
+  margin: 0 auto;
+  box-shadow: 0 0 12px 7px black; }
+
+.top__wrapper {
+  margin-top: -450px; }
+
+.top__inner {
+  display: flex;
+  justify-content: space-between; }
+
+.top__inner-img {
+  margin-left: 125px; }
+
+.top__inner-img img {
+  max-width: 430px;
+  box-shadow: 0 0 12px 7px black;
+  border-radius: 20px; }
+
+.top__inner-form {
+  max-width: 570px;
+  width: 100%; }
+
+.top__inner-suptitle {
+  margin-top: 70px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 51px;
+  font-family: "Jura", sans-serif; }
+
+.top__inner-title {
+  font-size: 60px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Jura", sans-serif;
+  letter-spacing: 24px;
+  text-transform: uppercase; }
+
+.top__inner-text {
+  margin-bottom: 73px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Qwigley", cursive;
+  text-align: center;
+  text-transform: lowercase;
+  letter-spacing: 5px; }
+
+.top-form {
+  background-image: url("../img/holz_2.jpg");
+  padding: 20px;
+  box-shadow: 0 0 12px 7px black; }
+
+.top-form form {
+  border: 1px solid #fff;
+  position: relative; }
+
+.top-form__inner {
+  padding: 50px 50px 118px 50px; }
+
+.top-form__title {
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 190px;
+  font-family: "Jura", sans-serif; }
+
+.top-form input {
+  border: none;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 14px;
+  color: black;
+  font-weight: 400;
+  width: 195px;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.top-form input + input {
+  margin-left: 30px; }
+
+.top-form input::placeholder {
+  color: black; }
+
+.top-form button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 22px 110px 22px 70px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: #FF9800;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: inset 0 0 20px black;
+  font-family: "Jura", sans-serif; }
+
+.top-form button:after {
+  content: '';
+  background-image: url("../img/arrow-right.png");
+  width: 31px;
+  height: 9px;
+  position: absolute;
+  right: 60px;
+  top: 25px; }
+
+.advantages {
+  margin-bottom: 200px; }
+
+.advantages__inner {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px; }
+
+.advantages__inner-title {
+  position: relative; }
+
+.advantages__inner-title h4 {
+  position: absolute;
+  font-weight: 700;
+  color: #fff;
+  font-size: 40px;
+  line-height: 50px;
+  max-width: 470px;
+  margin-bottom: 30px;
+  font-family: "Jura", sans-serif;
+  background: radial-gradient(black, transparent);
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 0 0 12px 7px black;
+  text-transform: uppercase; }
+
+.advantages__item {
+  width: 240px;
+  padding-left: 40px;
+  padding-top: 35px;
+  position: relative; }
+
+.advantages__item img {
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 0 12px 7px black;
+  border-radius: 50%; }
+
+.advantages__item img:hover {
+  cursor: pointer;
+  box-shadow: 0 0 12px #000; }
+
+.advantages__item::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 5px solid rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.advantages__item-number {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  border-bottom: 3px solid #FF9800;
+  display: inline-block;
+  font-family: "Jura", sans-serif; }
+
+.advantages__item-number span {
+  font-size: 14px; }
+
+.advantages__item-text {
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  font-family: "Jura", sans-serif; }
+
+.advantages__item-price {
+  position: relative; }
+
+.advantages__item-price h2 {
+  color: #fff;
+  position: absolute;
+  top: -10px;
+  left: -30px;
+  line-height: 10px;
+  font-size: 16px; }
+
+.list__title {
+  font-weight: 700;
+  color: #fff;
+  font-size: 40px;
+  line-height: 50px;
+  max-width: 470px;
+  margin-bottom: 30px;
+  background: radial-gradient(black, transparent);
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 0 0 12px 7px black;
+  font-family: "Jura", sans-serif;
+  text-transform: uppercase; }
+
+.tabs__content {
+  min-width: 500px;
+  height: 655px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  box-shadow: 0 0 12px 7px black;
+  margin-top: -130px;
+  background: radial-gradient(black, transparent); }
+
+.tabs__img ul,
+.tabs__img li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 500px;
+  position: relative;
+  list-style-type: none; }
+
+.tabs__img img {
+  width: 250px;
+  height: 163px;
+  padding: 3px; }
+
+.descr {
+  position: absolute;
+  left: 0;
+  width: 250px;
+  height: 163px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding-top: 80px;
+  text-align: center;
+  opacity: 0;
+  top: 100%;
+  transition: all .5s;
+  transform: rotateZ(90deg) scale(0); }
+
+.tabs__img li:hover .descr {
+  display: block;
+  opacity: 1;
+  top: 0;
+  transform: rotateZ(0deg) scale(1); }
+
+.list__inner {
+  display: flex;
+  justify-content: space-between;
+  background: radial-gradient(black, transparent); }
+
+.tabs {
+  padding-right: 20px;
+  width: 30%; }
+
+.tab {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  padding: 20px 40px 24px 0;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  font-family: "Jura", sans-serif;
+  display: flex;
+  align-items: center; }
+
+.tab.active {
+  position: relative; }
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  background-image: url("../img/arrow_1.svg");
+  width: 8px;
+  height: 13px; }
+
+.tab span {
+  color: #FF9800;
+  margin-right: 18px; }
+
+.tab-item {
+  display: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border: 5px solid rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  line-height: 45px;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.tab-item:first-child {
+  display: block; }
+
+.item-1 {
+  left: 15px;
+  top: 15px; }
+
+.item-2 {
+  left: 265px;
+  top: 15px; }
+
+.item-3 {
+  left: 14px;
+  top: 188px; }
+
+.item-4 {
+  left: 265px;
+  top: 188px; }
+
+.item-5 {
+  left: 14px;
+  top: 360px; }
+
+.item-6 {
+  left: 265px;
+  top: 360px; }
+
+.item-7 {
+  left: 14px;
+  top: 532px; }
+
+.item-8 {
+  left: 265px;
+  top: 532px; }
+
+/*.tabs__box{
+	display: flex;
+	flex-wrap: wrap;
+}*/
+.tabs__box .tab {
+  font-size: 16px;
+  font-weight: 400;
+  width: 50%;
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  line-height: 20px; }
+
+.tabs__box .tab span {
+  font-size: 12px; }
+
+.tabs__box .tab.active::after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  background-image: url("../img/arrow_1.svg");
+  width: 8px;
+  height: 13px; }
+
+/*.tabs__box .tab:first-child,//так обращаются к первому элементу
+.tabs__box .tab:nth-child(3){//и к третьему
+	border-right: 1px solid $white;
+	padding-right: 25px;
+}
+/*.tabs__box .tab:last-child,//так обращаются к последнему элементу
+.tabs__box .tab:nth-child(2){
+	padding-left: 25px;
+}*/
+.tabs__box .tab.active::after {
+  display: none; }
+
+.tabs__reviews {
+  background: radial-gradient(black, transparent);
+  padding: 20px;
+  max-width: 326px;
+  position: absolute;
+  bottom: 83px;
+  left: -331px; }
+
+.tabs__reviews-inner {
+  border: 1px solid #fff;
+  padding: 30px 50px 30px 40px; }
+
+.tabs__reviews-text {
+  font-family: "Jura", sans-serif;
+  color: #fff; }
+
+.tabs__reviews-link {
+  color: #FF9800;
+  padding-bottom: 1px;
+  font-weight: 600;
+  padding: 0px 8px;
+  position: absolute;
+  bottom: 27px; }
+
+.list__link {
+  display: flex;
+  justify-content: flex-end; }
+
+.list__link a {
+  margin-top: 20px;
+  padding: 22px 100px 22px 120px;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  background-color: #FF9800;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 20px black;
+  font-family: "Jura", sans-serif;
+  text-decoration: none;
+  min-width: 319px;
+  position: relative;
+  bottom: 94px;
+  left: -510px; }
+
+.list__link a:after {
+  content: '';
+  background-image: url("../img/arrow-right.png");
+  width: 31px;
+  height: 9px;
+  position: absolute;
+  right: 60px;
+  top: 30px; }
